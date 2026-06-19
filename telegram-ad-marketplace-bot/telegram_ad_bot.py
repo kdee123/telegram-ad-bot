@@ -10,6 +10,8 @@ from __future__ import annotations
 import argparse
 import json
 import os
+# Fix for Render free tier
+os.environ.setdefault('PORT', '10000')
 import shlex
 import sqlite3
 import sys
